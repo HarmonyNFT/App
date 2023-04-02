@@ -127,311 +127,558 @@ const arewardspunk2decimals = parseFloat(arewards2punks).toFixed(2);
         }}
       > */}
       <Container fluid>
-        <Card
-          style={{
-           // border: "2px solid white",
-          backgroundColor: "rgba(0,0,0,0)",
-            backgroundPosition: "50% 50%",
-            //maxWidth: "600px",
-         //   borderRadius: "0.75rem",
-           // boxShadow: "2px 2px 10px #00F7FF"
-          }}
-          className="margin1"
-        >
-          <Card.Body>
-
-          
-          <h2 className="text1" style={{
-                border: "1px solid #fff",
-            padding:"10px 15px",
-            display:"inline-block", backgroundColor:"rgba(0,0,0,0.8)"}}>Mint/Stake NFT</h2>
-
-
-
-<div class="row">
-          <div className="col-md-6">
-            <div class="card-body" style={{border: "1px inset", color: "#5c5e5c", minHeight:"830px", marginTop:"10rem"}}>
-            <img
-                      src={Punk}
-                      style={{ height: "12rem", width: "auto", borderRadius:"30px", boxShadow: "2px 2px 10px #00F7FF" , marginTop:"-7rem" ,marginBottom:"3rem"}}
-                    />
-            <p className="paragraph">Harmony Punks</p>
-            <form id="nft">
-              <div
-                id="template"
-                className="row"
-                style={{ textAlign: "center" }}
-              >
-                <div class="col-md-12">
-                  <div
-                    style={{
-                      textAlign: "center",
-                    }}
-                  >
-                   
-                    <p className="paragraph" style={{ textAlign: "center",  marginTop: "10px"  }}>
-                      Price : <span className="answer">500 SGB</span>{" "}
-                    </p>
-                   
-                    <p
-                      className="paragraph"
-                      style={{ textAlign: "center", marginTop: "-10px" }}
+        <h2>
+          <span>Mint</span>
+          <span> |</span>
+          <span> Stake</span>
+          <span> NFT</span>
+          <div class="scroll-more">↓</div>
+        </h2>
+        <div class="row">
+        <div className="col-md-3">
+        <div
+              class="card-body"
+              style={{
+                border: "1px inset",
+                color: "#5c5e5c",
+              
+                marginTop: "10rem",
+              }}
+            >
+              <img
+                src={Punk}
+                style={{
+                  height: "auto",
+                  width: "100%",
+                  borderRadius: "0px 80px 0 80px",
+                 
+                  marginBottom: "3rem",
+                }}
+              />
+              <h3 className="paragraph">Harmony Punks</h3>
+              <form id="nft">
+                <div
+                  id="template"
+                  className="row"
+                  style={{ textAlign: "center" }}
+                >
+                  <div class="col-md-12">
+                    <div
+                      style={{
+                        textAlign: "center",
+                      }}
                     >
-                      Collection Size : <span className="answer">{totalpunksminted}/1000</span>{" "}
-                    </p>
-                    <button type="button" onClick={mint_harmony_punk}
-                    className="solbuttoninner"
-                    style={{
-                      margin: "10px auto 50px",
-                     
-                    }}
-                  >
-                    Mint
-                  </button>
-                  <button id="enable_button_punks" disabled="" onClick={enable_staking_punks}  type="button"  className="solbuttoninner" style={{ margin: "10px auto 30px" , display: "inline-block",}}> Enable Staking</button>
-                    <p className="paragraph">
-                    Punk NFTs owned:{" "}
-                    <span className="answer">
-                      {+amountownednotstakedpunks + +amountstakedpunks}
-                    </span>
-                  </p>
-                  <button type ="button" onClick={stake_all_token_punks} className="solbuttoninner" style={{ margin: "auto" , display: "inline-block"}}> Stake all</button>
-
-                  <p className="paragraph" style={{marginTop:"50px"}}>
-                    Punk NFTs staked:
-                    <span className="answer">{amountstakedpunks}/{+amountstakedpunks + +amountownednotstakedpunks} </span>
-                  </p>
-                  <button type ="button" onClick={unstake_all_token_punks} className="solbuttoninner" style={{ margin: "auto" , display: "inline-block"}}> Unstake all</button>
-                 
-                  <p className="paragraph" style={{marginTop:"50px"}}>
-                   $HAR for Punk Staking:{" "}
-                    <span className="answer">{arewardspunk2decimals} </span>
-                  </p>
-                  
-                  <button type ="button" onClick={claim_har_punks} className="solbuttoninner" style={{ margin: "auto" , display: "inline-block"}}> Claim $HAR</button>
-                  </div>
-                 
-                 
-                 
-                 
-                 
-                </div>
-              </div>
-            </form>
-            <br />
-            </div>
-            <div class="card-body" style={{border: "1px inset", color: "#5c5e5c", minHeight:"830px",marginTop:"10rem"}}>
-            <img
-                      src={Archer}
-                      style={{ height: "12rem", width: "auto", borderRadius:"30px", boxShadow: "2px 2px 10px #00F7FF" , marginTop:"-7rem" ,marginBottom:"3rem", backgroundColor:"black"}}
-                    />
-            <p className="paragraph">Archers of Harmony</p>
-            <form id="nft">
-              <div
-                id="template"
-                className="row"
-                style={{ textAlign: "center" }}
-              >
-                <div class="col-md-12">
-                  <div
-                    style={{
-                      textAlign: "center",
-                    }}
-                  >
-                 
-                    <p className="paragraph" style={{ textAlign: "center", marginTop: "10px" }}>
-                      Price : <span className="answer">750 SGB</span>{" "}
-                    </p>
-                    <p
-                      className="paragraph"
-                      style={{ textAlign: "center", marginTop: "-10px" }}
-                    >
-                      Collection Size : <span className="answer"> {totalarchersminted}/51</span>{" "}
-                    </p>
-                    <button disabled={true} type ="button" onClick={mint_archer}
-                    className="solbuttonmintclosed"
-                    style={{
-                      margin: "10px auto 50px",
-                     
+                      <p
+                        className="paragraph"
+                        style={{ textAlign: "center", marginTop: "10px" }}
+                      >
+                        Price : <span className="answer">500 SGB</span>{" "}
+                      </p>
                       
-                    }}
-                  >
-                    Mint
-                  </button>
-                  <button id="enable_button" disabled="" onClick={enable_staking}  type="button"  className="solbuttoninner" style={{ margin: "10px auto 30px" , display: "inline-block",}}> Enable Staking</button>
-                   
+                        
+                          <p
+                            className="paragraph"
+                            style={{ textAlign: "center" }}
+                          >
+                            Collection Size :{" "}
+                            <span className="answer">
+                              {totalpunksminted}/1000
+                            </span>{" "}
+                          </p>
+                          <button
+                            type="button"
+                            onClick={mint_harmony_punk}
+                            className="solbuttoninner"
+                            style={{
+                              margin: "10px auto 0px",
+                            }}
+                          >
+                            Mint
+                          </button>
+                          <button
+                            id="enable_button_punks"
+                            disabled=""
+                            onClick={enable_staking_punks}
+                            type="button"
+                            className="solbuttoninner"
+                            style={{
+                              margin: "10px auto 10px",
+                              display: "inline-block",
+                            }}
+                          >
+                            {" "}
+                            Enable Staking
+                          </button>
+                        
+                       
+                          <p className="paragraph">
+                            Punk NFTs owned:{" "}
+                            <span className="answer">
+                              {+amountownednotstakedpunks + +amountstakedpunks}
+                            </span>
+                          </p>
+                          <button
+                            type="button"
+                            onClick={stake_all_token_punks}
+                            className="solbuttoninner"
+                            style={{ margin: "auto", display: "inline-block" }}
+                          >
+                            {" "}
+                            Stake all
+                          </button>
 
-<p className="paragraph">
-  Archer NFTs owned:{" "}
-  <span className="answer">
-    {+amountownednotstaked + +amountstaked}
-  </span>
-</p >
-<button type ="button" onClick={stake_all_token} className="solbuttoninner" style={{ margin: "auto" , display: "inline-block"}}> Stake all</button>
-<p className="paragraph" style={{marginTop:"50px"}}>
-  Archer NFTs staked:
-  <span className="answer">{amountstaked}/{+amountstaked + +amountownednotstaked} </span>
-</p>
-<button type ="button" onClick={unstake_all_token} className="solbuttoninner"style={{ margin: "auto" , display: "inline-block"}}>  Unstake all</button>
-<p className="paragraph" style={{marginTop:"50px"}} >
-                   $HAR for Archer Staking:{" "}
-                    <span className="answer">{arewards2decimals} </span>
-                  </p>
-                  <button type ="button" onClick={claim_har} className="solbuttoninner" style={{ margin: "auto" , display: "inline-block"}}> Claim $HAR</button>
-                  </div>
-                 
-                 
-                 
-                 
-                 
-                  
-                 
-                 
-                </div>
-              </div>
-            </form>
-            <br />
-            </div>
-          </div>   
-          <div class="col-md-6">        
-            <div class="card-body" style={{border: "1px inset", color: "#5c5e5c", minHeight:"830px",marginTop:"10rem"}}>
-            <img
-                       src={Knight}
-                      style={{ height: "12rem", width: "auto", borderRadius:"30px", boxShadow: "2px 2px 10px #00F7FF" , marginTop:"-7rem" ,marginBottom:"3rem", backgroundColor:"black"}}
-                    />
-            <p className="paragraph">Knights of Harmony</p>
-            <form id="nft">
-              <div
-                id="template"
-                className="row"
-                style={{ textAlign: "center" }}
-              >
-                <div class="col-md-12">
-                  <div
-                    style={{
-                      textAlign: "center",
-                    }}
-                  >
-                
-                    <p className="paragraph" style={{ textAlign: "center" , marginTop: "10px" }}>
-                      Price : <span className="answer">750 SGB</span>{" "}
-                    </p>
-                    <p
-                      className="paragraph"
-                      style={{ textAlign: "center", marginTop: "-10px" }}
-                    >
-                      Collection Size : <span className="answer"> {totalknightsminted}/2000</span>{" "}
-                    </p>
-                    <button type ="button" onClick={mint_knight}
-                    className="solbuttoninner"
-                    style={{
-                      margin: "10px auto 50px",
-                     
-                    }}
-                  >
-                    Mint
-                  </button>
-                  <button id="enable_button_knights" disabled="" onClick={enable_staking_knights}  type="button"  className="solbuttoninner" style={{ margin: "10px auto 30px" , display: "inline-block",}}> Enable Staking</button>
-                    <p className="paragraph">
-                    Knight NFTs owned:{" "}
-                    <span className="answer">
-                      {+amountownednotstakedknights + +amountstakedknights}
-                    </span>
-                  </p>
-                  <button type ="button" onClick={stake_all_token_knights} className="solbuttoninner" style={{ margin: "auto" , display: "inline-block"}}> Stake all</button>
-                  <p className="paragraph" style={{marginTop:"50px"}}>
-                    Knight NFTs staked:
-                    <span className="answer">{amountstakedknights}/ {+amountownednotstakedknights + +amountstakedknights} </span>
-                  </p>
-                  <button type ="button" onClick={unstake_all_token_knights} className="solbuttoninner" style={{ margin: "auto" , display: "inline-block"}}> Unstake all</button>
-                  <p className="paragraph" style={{marginTop:"50px"}}>
-                    $HAR for Knight Staking:{" "}
-                    <span className="answer">{arewardsknights2decimals} </span>
-                  </p>
-                  <button type ="button" onClick={claim_har_knight} className="solbuttoninner" style={{ margin: "auto" , display: "inline-block"}}> Claim $HAR</button>
-                  </div>
-                
-                  
-                 
-                 
-                  
-                  
-                </div>
-              </div>
-            </form>
-            <br />
-            </div>
-            <div class="card-body" style={{border: "1px inset", color: "#5c5e5c", minHeight:"830px",marginTop:"10rem"}}>
-            <img
-                      src={Mage}
-                      style={{ height: "12rem", width: "auto", borderRadius:"30px", boxShadow: "2px 2px 10px #00F7FF" , marginTop:"-7rem" ,marginBottom:"3rem", backgroundColor:"black"}}
-                    />
-            <p className="paragraph">Mages of Harmony</p>
-            <form id="nft">
-              <div
-                id="template"
-                className="row"
-                style={{ textAlign: "center" }}
-              >
-                <div class="col-md-12">
-                  <div
-                    style={{
-                      textAlign: "center",
-                    }}
-                  >
-                 
-                    <p className="paragraph" style={{ textAlign: "center" , marginTop: "10px" }}>
-                      Price : <span className="answer">750 SGB</span>{" "}
-                    </p>
-                    <p
-                      className="paragraph"
-                      style={{ textAlign: "center", marginTop: "-10px" }}
-                    >
-                      Collection Size : <span className="answer"> {totalmagesminted}/2000</span>{" "}
-                    </p>
-                    <button type ="button" onClick={mint_mage}
-                    className="solbuttoninner"
-                    style={{
-                      margin: "10px auto 50px",
-                     
-                    }}
-                  >
-                    Mint
-                  </button>
-                  <button id="enable_button_punks" disabled="" onClick={enable_staking_mages}  type="button"  className="solbuttoninner" style={{ margin: "10px auto 30px" , display: "inline-block",}}> Enable Staking</button>
-                    <p className="paragraph">
-                    Mage NFTs owned:{" "}
-                    <span className="answer">
-                      {+amountownednotstakedmages + +amountstakedmages}
-                    </span>
-                  </p>
-                  <button type ="button" onClick={stake_all_token_mages} className="solbuttoninner" style={{ margin: "auto" , display: "inline-block"}}> Stake all</button>
-                  <p className="paragraph" style={{marginTop:"50px"}}>
-                    Mage NFTs staked:
-                    <span className="answer">{amountstakedmages}/ {+amountownednotstakedmages + +amountstakedmages} </span>
-                  </p>
-                  <button type ="button" onClick={unstake_all_token_mages} className="solbuttoninner" style={{ margin: "auto" , display: "inline-block"}}> Unstake all</button>
-                  <p className="paragraph" style={{marginTop:"50px"}}>
-                    $HAR for Mage Staking:{" "}
-                    <span className="answer">{arewardsmages2decimals} </span>
-                  </p>
-                  <button type ="button" onClick={claim_har_mage} className="solbuttoninner" style={{margin: "auto" , display: "inline-block"}}> Claim $HAR</button>
-                  </div>
-                 
-                 
-                  
-                  
-                </div>
-              </div>
-            </form>
-            <br />
-            </div>
-          </div>
- </div>
+                          <p
+                            className="paragraph"
+                            style={{ marginTop: "15px" }}
+                          >
+                            Punk NFTs staked:
+                            <span className="answer">
+                              {amountstakedpunks}/
+                              {+amountstakedpunks + +amountownednotstakedpunks}{" "}
+                            </span>
+                          </p>
+                          <button
+                            type="button"
+                            onClick={unstake_all_token_punks}
+                            className="solbuttoninner"
+                            style={{ margin: "auto", display: "inline-block" }}
+                          >
+                            {" "}
+                            Unstake all
+                          </button>
+                        
+                      <hr></hr>
+                      <p className="paragraph" style={{ marginTop: "0px" }}>
+                        $HAR for Punk Staking:{" "}
+                        <span className="answer">{arewardspunk2decimals} </span>
+                      </p>
 
-         
-          </Card.Body>
-        </Card>
+                      <button
+                        type="button"
+                        onClick={claim_har_punks}
+                        className="solbuttoninner"
+                        style={{ margin: "auto", display: "inline-block" }}
+                      >
+                        {" "}
+                        Claim $HAR
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <br />
+            </div>
+        </div>
+        <div className="col-md-3">
+        <div
+              class="card-body"
+              style={{
+                border: "1px inset",
+                color: "#5c5e5c",
+          
+                marginTop: "10rem",
+              }}
+            >
+              <img
+                src={Archer}
+                style={{
+                  height: "auto",
+                  width: "100%",
+                  borderRadius: "0px 80px 0 80px",
+                  
+                  marginBottom: "3rem",
+                  backgroundColor: "black",
+                }}
+              />
+              <h3 className="paragraph">Archers of Harmony</h3>
+              <form id="nft">
+                <div
+                  id="template"
+                  className="row"
+                  style={{ textAlign: "center" }}
+                >
+                  <div class="col-md-12">
+                    <div
+                      style={{
+                        textAlign: "center",
+                      }}
+                    >
+                      <p
+                        className="paragraph"
+                        style={{ textAlign: "center", marginTop: "10px" }}
+                      >
+                        Price : <span className="answer">750 SGB</span>{" "}
+                      </p>
+                     
+                        
+                          <p
+                            className="paragraph"
+                            style={{ textAlign: "center" }}
+                          >
+                            Collection Size :{" "}
+                            <span className="answer">
+                              {" "}
+                              {totalarchersminted}/51
+                            </span>{" "}
+                          </p>
+                          <button
+                            disabled={true}
+                            type="button"
+                            onClick={mint_archer}
+                            className="solbuttonmintclosed"
+                            style={{
+                              margin: "10px auto 0px",
+                            }}
+                          >
+                            Mint
+                          </button>
+                          <button
+                            id="enable_button"
+                            disabled=""
+                            onClick={enable_staking}
+                            type="button"
+                            className="solbuttoninner"
+                            style={{
+                              margin: "10px auto 10px",
+                              display: "inline-block",
+                            }}
+                          >
+                            {" "}
+                            Enable Staking
+                          </button>
+                        
+                        
+                          <p className="paragraph">
+                            Archer NFTs owned:{" "}
+                            <span className="answer">
+                              {+amountownednotstaked + +amountstaked}
+                            </span>
+                          </p>
+
+                          <button
+                            type="button"
+                            onClick={stake_all_token}
+                            className="solbuttoninner"
+                            style={{ margin: "auto", display: "inline-block" }}
+                          >
+                            {" "}
+                            Stake all
+                          </button>
+                          <p className="paragraph" style={{ marginTop: "15px" }}>
+                            Archer NFTs staked:
+                            <span className="answer">
+                              {amountstaked}/
+                              {+amountstaked + +amountownednotstaked}{" "}
+                            </span>
+                          </p>
+                          <button
+                            type="button"
+                            onClick={unstake_all_token}
+                            className="solbuttoninner"
+                            style={{ margin: "auto", display: "inline-block" }}
+                          >
+                            {" "}
+                            Unstake all
+                          </button>
+                        
+                      <hr></hr>
+                      <p className="paragraph" style={{ marginTop: "0px" }}>
+                        $HAR for Archer Staking:{" "}
+                        <span className="answer">{arewards2decimals} </span>
+                      </p>
+                      <button
+                        type="button"
+                        onClick={claim_har}
+                        className="solbuttoninner"
+                        style={{ margin: "auto", display: "inline-block" }}
+                      >
+                        {" "}
+                        Claim $HAR
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <br />
+            </div>
+        </div>
+        <div className="col-md-3">
+        <div
+              class="card-body"
+              style={{
+                border: "1px inset",
+                color: "#5c5e5c",
+                
+                marginTop: "10rem",
+              }}
+            >
+              <img
+                src={Knight}
+                style={{
+                  height: "auto",
+                  width: "100%",
+                  borderRadius: "0px 80px 0 80px",
+                
+                  marginBottom: "3rem",
+                  backgroundColor: "black",
+                }}
+              />
+              <h3 className="paragraph">Knights of Harmony</h3>
+              <form id="nft">
+                <div
+                  id="template"
+                  className="row"
+                  style={{ textAlign: "center" }}
+                >
+                  <div class="col-md-12">
+                    <div
+                      style={{
+                        textAlign: "center",
+                      }}
+                    >
+                      <p
+                        className="paragraph"
+                        style={{ textAlign: "center", marginTop: "10px" }}
+                      >
+                        Price : <span className="answer">750 SGB</span>{" "}
+                      </p>
+                      
+                        
+                          <p
+                            className="paragraph"
+                            style={{ textAlign: "center" }}
+                          >
+                            Collection Size :{" "}
+                            <span className="answer">
+                              {" "}
+                              {totalknightsminted}/2000
+                            </span>{" "}
+                          </p>
+                          <button
+                            type="button"
+                            onClick={mint_knight}
+                            className="solbuttoninner"
+                            style={{
+                              margin: "10px auto 0px",
+                            }}
+                          >
+                            Mint
+                          </button>
+                          <button
+                            id="enable_button_knights"
+                            disabled=""
+                            onClick={enable_staking_knights}
+                            type="button"
+                            className="solbuttoninner"
+                            style={{
+                              margin: "10px auto 10px",
+                              display: "inline-block",
+                            }}
+                          >
+                            {" "}
+                            Enable Staking
+                          </button>
+                        
+                        
+                          <p className="paragraph">
+                            Knight NFTs owned:{" "}
+                            <span className="answer">
+                              {+amountownednotstakedknights +
+                                +amountstakedknights}
+                            </span>
+                          </p>
+                          <button
+                            type="button"
+                            onClick={stake_all_token_knights}
+                            className="solbuttoninner"
+                            style={{ margin: "auto", display: "inline-block" }}
+                          >
+                            {" "}
+                            Stake all
+                          </button>
+                          <p className="paragraph" style={{ marginTop: "15px" }}>
+                            Knight NFTs staked:
+                            <span className="answer">
+                              {amountstakedknights}/{" "}
+                              {+amountownednotstakedknights +
+                                +amountstakedknights}{" "}
+                            </span>
+                          </p>
+                          <button
+                            type="button"
+                            onClick={unstake_all_token_knights}
+                            className="solbuttoninner"
+                            style={{ margin: "auto", display: "inline-block" }}
+                          >
+                            {" "}
+                            Unstake all
+                          </button>
+                        
+                      
+                      <hr></hr>
+                      <p className="paragraph" style={{ marginTop: "0px" }}>
+                        $HAR for Knight Staking:{" "}
+                        <span className="answer">
+                          {arewardsknights2decimals}{" "}
+                        </span>
+                      </p>
+                      <button
+                        type="button"
+                        onClick={claim_har_knight}
+                        className="solbuttoninner"
+                        style={{ margin: "auto", display: "inline-block" }}
+                      >
+                        {" "}
+                        Claim $HAR
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <br />
+            </div>
+        </div>
+        <div className="col-md-3">
+        <div
+              class="card-body"
+              style={{
+                border: "1px inset",
+                color: "#5c5e5c",
+          
+                marginTop: "10rem",
+              }}
+            >
+              <img
+                src={Mage}
+                style={{
+                  height: "auto",
+                  width: "100%",
+                  borderRadius: "0px 80px 0px 8
+                     0px",
+                
+                  marginBottom: "3rem",
+                  backgroundColor: "black",
+                }}
+              />
+              <h3 className="paragraph">Mages of Harmony</h3>
+              <form id="nft">
+                <div
+                  id="template"
+                  className="row"
+                  style={{ textAlign: "center" }}
+                >
+                  <div class="col-md-12">
+                    <div
+                      style={{
+                        textAlign: "center",
+                      }}
+                    >
+                      <p
+                        className="paragraph"
+                        style={{ textAlign: "center", marginTop: "10px" }}
+                      >
+                        Price : <span className="answer">750 SGB</span>{" "}
+                      </p>
+                     
+                        
+                          <p
+                            className="paragraph"
+                            style={{ textAlign: "center" }}
+                          >
+                            Collection Size :{" "}
+                            <span className="answer">
+                              {" "}
+                              {totalmagesminted}/2000
+                            </span>{" "}
+                          </p>
+                          <button
+                            type="button"
+                            onClick={mint_mage}
+                            className="solbuttoninner"
+                            style={{
+                              margin: "10px auto 0px",
+                            }}
+                          >
+                            Mint
+                          </button>
+                          <button
+                            id="enable_button_punks"
+                            disabled=""
+                            onClick={enable_staking_mages}
+                            type="button"
+                            className="solbuttoninner"
+                            style={{
+                              margin: "10px auto 10px",
+                              display: "inline-block",
+                            }}
+                          >
+                            {" "}
+                            Enable Staking
+                          </button>
+                        
+                       
+                          <p className="paragraph">
+                            Mage NFTs owned:{" "}
+                            <span className="answer">
+                              {+amountownednotstakedmages + +amountstakedmages}
+                            </span>
+                          </p>
+                          <button
+                            type="button"
+                            onClick={stake_all_token_mages}
+                            className="solbuttoninner"
+                            style={{ margin: "auto", display: "inline-block" }}
+                          >
+                            {" "}
+                            Stake all
+                          </button>
+
+                          <p className="paragraph" style={{ marginTop: "15px" }}>
+                            Mage NFTs staked:
+                            <span className="answer">
+                              {amountstakedmages}/{" "}
+                              {+amountownednotstakedmages + +amountstakedmages}{" "}
+                            </span>
+                          </p>
+                          <button
+                            type="button"
+                            onClick={unstake_all_token_mages}
+                            className="solbuttoninner"
+                            style={{ margin: "auto", display: "inline-block" }}
+                          >
+                            {" "}
+                            Unstake all
+                          </button>
+                        
+                     
+                      <hr></hr>
+                      <p className="paragraph" style={{ marginTop: "0px" }}>
+                        $HAR for Mage Staking:{" "}
+                        <span className="answer">
+                          {arewardsmages2decimals}{" "}
+                        </span>
+                      </p>
+                      <button
+                        type="button"
+                        onClick={claim_har_mage}
+                        className="solbuttoninner"
+                        style={{ margin: "auto", display: "inline-block" }}
+                      >
+                        {" "}
+                        Claim $HAR
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <br />
+            </div>
+        </div>
+        </div>
+
+
+
+      
       </Container>
       {/* </Tilt> */}
     </div>
