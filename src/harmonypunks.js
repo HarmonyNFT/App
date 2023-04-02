@@ -553,8 +553,7 @@ const arewardspunk2decimals = parseFloat(arewards2punks).toFixed(2);
                 style={{
                   height: "auto",
                   width: "100%",
-                  borderRadius: "0px 80px 0px 8
-                     0px",
+                  borderRadius: "0px 80px 0px 80px",
                 
                   marginBottom: "3rem",
                   backgroundColor: "black",

@@ -13,6 +13,117 @@
   }
 }
 
+
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, to {
+    transform: translateZ(-2px) translateY(5px);
+  }
+  40% {
+    transform: rotateY(180deg) translateZ(-2px) translateY(-35px);
+  }
+  60% {
+    transform: translateZ(-2px) translateY(-25px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, to {
+    transform: translateZ(-2px) translateY(5px);
+  }
+  40% {
+    transform: rotateY(180deg) translateZ(-2px) translateY(-35px);
+  }
+  60% {
+    transform: translateZ(-2px) translateY(-25px);
+  }
+}
+.card-body img {
+  box-shadow: rgb(81, 208, 251) 0px 0px 30px;
+}
+
+.card-body:hover img {
+  box-shadow: rgb(245, 46, 43) 0px 0px 30px;
+}
+
+.card-body {
+  transition: ease .5s all;
+  color: rgb(92, 94, 92);
+margin-top: 10rem;
+background: #000000db;;
+box-shadow: rgb(245, 46, 43) 0px 0px 30px;
+border-radius: 0px 80px 5px 5px;
+border:none !important;
+padding-bottom: 20px !important;
+}
+
+.card-body:hover{
+  box-shadow: #51d0fb 0px 0px 30px;
+  transform: scale(1.1);
+}
+
+
+
+h2{
+
+display: inline-block;
+padding: 0px 35px;
+
+border-radius: 6%;
+}
+
+h2,
+h3 {
+  font-size: 4vw !important;
+  transform: rotateX(0) rotateY(-25deg);
+  text-transform: uppercase;
+  text-align: center;
+  color: #b9dfff;
+  color: #fff;
+  font-family: "Zefani";
+  font-family: "Arial";
+  position: relative;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff;
+}
+h3{
+  font-size: 25px !important;
+}
+
+
+h3 span {
+  display: inline-block;
+}
+
+.scroll-more {
+  color: white;
+  font-size: 5rem !important;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: monospace;
+  pointer-events: none;
+  z-index: -1;
+  transform-origin: center;
+  animation: bounce 3s cubic-bezier(0.37, 0, 0.21, 1.02) infinite, fonts 5s linear infinite;
+  display: inline-block !important;
+}
+
+
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.info-text{
+  background: #0000008f;
+padding: 20px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

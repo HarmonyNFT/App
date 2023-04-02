@@ -71,26 +71,14 @@ const Blockchaindata = () => {
     <div>
     
       <Container fluid>
-        <Card
-          style={{
-            border: "2px solid white",
-            backgroundColor: "rgba(0,0,0,0.8)",
-            backgroundPosition: "50% 50%",
-           // maxWidth: "600px",
-            borderRadius: "0.75rem",
-            boxShadow: "2px 2px 10px #00F7FF"
-          }}
-          className="margin1"
-        >
-          <Card.Body>
-            <h2 className="text1">Staking information</h2>
-            <br />
+      
+            <h3 className="">Staking information</h3>
+         
             <form>
               <div className="row" style={{ textAlign: "center" }}>
                 <div className="col-md-12">
                   {" "}
-                  <p  className="paragraph">
-                  
+                  <p  className="paragraph info-text">
                     
                     You have to enable staking for each colllection once!
                     A Punk NFT will let you earn 5 $HAR per day + discounts for collections on other chains in the future!
@@ -101,18 +89,11 @@ const Blockchaindata = () => {
                    
                   </p>
                  
-                 
-              
-              
-                 
-                 
-                
                 </div>
               </div>
             </form>
             <br />
-          </Card.Body>
-        </Card>
+         
       </Container>
       {/* </Tilt> */}
     </div>

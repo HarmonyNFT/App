@@ -99,20 +99,7 @@ const StakeCard = () => {
             <br />
                   </Card.Body>
         </Card>*/}
-        <Card
-        id="nft"
-          style={{
-            border: "2px solid white",
-            backgroundColor: "rgba(0,0,0,0.5)",
-            backgroundPosition: "50% 50%",
-            maxWidth: "600px",
-            borderRadius: "0.75rem",
-            boxShadow: "2px 2px 10px #00F7FF"
-          }}
-          className="margin1"
-        >
-          <Card.Body>
-          
+     
             
             <button type ="button" onClick={render_unstaked_cards} className="solbuttoninner" style={{ margin: "auto" , display: "inline-block", marginRight: "10px", marginBottom: "10px",  marginTop: "10px"}}> Show unstaked NFTs</button>
             <form  id="nft">
@@ -262,8 +249,8 @@ onClick={e => stake_nft_mage(e.target.value)}
   
  </div>
             </form>
-          </Card.Body>
-          <Card.Body>
+          
+     
           <button type ="button" onClick={render_staked_cards} className="solbuttoninner" style={{ margin: "auto" , display: "inline-block", marginRight: "10px", marginBottom: "10px"}}> Show staked NFTs</button>
             <form id="nft">
               <div  
@@ -411,7 +398,7 @@ onClick={e => stake_nft_mage(e.target.value)}
               
            
             </form>
-          </Card.Body>
+
           {/*
           
            <Row className="mb-4">
@@ -434,7 +421,7 @@ onClick={e => stake_nft_mage(e.target.value)}
               </button>
             </Col>
                   </Row> */}
-        </Card>
+      
       </Container>
       {/* </Tilt> */}
     </div>

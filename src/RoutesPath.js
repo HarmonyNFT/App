@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
 
-const RoutesPath = () => {
+
+
+function RoutesPath() {
   return (
     <BrowserRouter>
       <Routes>
@@ -10,6 +12,6 @@ const RoutesPath = () => {
       </Routes>
     </BrowserRouter>
   );
-};
+}
 
 export default RoutesPath;

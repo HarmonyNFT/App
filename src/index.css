@@ -25,7 +25,7 @@ code {
 }
 
 .solbuttoninner{
-  min-width:200px !important;
+  min-width:200px ;
 }
 
 
@@ -90,7 +90,7 @@ button{
 
 
 .solbuttoninner {
-  height: 42px;
+  height: 30px;
   text-decoration: none !important;
   border-radius: 9px;
   padding: 0px 15px;
@@ -170,7 +170,7 @@ button{
 
 
 .solbuttonmintclosed {
-  height: 42px;
+  height: 30px;
   text-decoration: none !important;
   border-radius: 9px;
   padding: 0px 15px;
@@ -183,6 +183,7 @@ button{
   background: #FF0000;
   display: block;
   box-shadow: 0px 0px 10px 3px #FF0000;
+  min-width:200px;
 }
 
 
@@ -302,7 +303,7 @@ input {
 
 .paragraph {
   color: white;
-  font-size: 25px;
+  font-size: 17px;
   margin-top: 3px;
   font-weight: 400;
   font-family: "ＭＳ Ｐゴシック";

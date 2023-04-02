@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import title from "./Images/text.png";
 import Button from 'react-bootstrap/Button';
 
+
   import { getCurrentWalletConnected, connectWallet, enable_staking, enable_staking_knights, owned_Har, change_enable_staking_button  } from "./util/interact.js";
 
 const Navbartop = () => {
@@ -83,6 +84,7 @@ const Navbartop = () => {
                 )}
               </button>
             </Nav.Link>
+           
           </Nav>
         </Container>
       </Navbar>
