@@ -19,7 +19,7 @@ function App() {
             <video autoPlay muted loop playsinline id="myVideo" >
                 <source src={video_bg} type="video/mp4" />
               </video>
-              <HarmonyPunks />
+           
               <Container style={{paddingTop: "200px"}}>
                 <Row>
                   {" "}
@@ -32,6 +32,7 @@ function App() {
                   <Col md={12} style={{marginTop: "200px"}}>
                     {" "}
                     <Blockchaindata />
+                    <HarmonyPunks />
                   </Col>
                 </Row>
               </Container>
